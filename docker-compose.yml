@@ -1,0 +1,52 @@
+volumes:
+  gotcha-data:
+    external: true
+  pgadmin:
+    external: true
+services:
+  postgres:
+    image: postgres:14.2-bullseye
+    volumes:
+      - gotcha-data:/var/lib/postgresql/data
+      - ./db:/docker-enterypoint-initdb.d
+    environment:
+      - POSTGRES_MULTIPLE_DATABASES=gotcha
+      - POSTGRES_PASSWORD=test-databases
+    ports:
+      15432:5432
+  gotcha:
+    build:
+      context: ./gotcha
+      dockerfile: ./Dockerfile.dev
+    ports:
+      - "8080:8000"
+    volumes:
+      - ./gotcha:/app
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: postgres://gotcha:password@postgres:5432/gotcha
+      WAIT_HOSTS: postgres:5432
+      WAIT_TIMEOUT: 240
+  gotcha-ghi:
+    image: node:lts-bullseye
+    command: /bin/bash run.sh
+    working_dir: /app
+    volumes:
+      - ./ghi:/app
+    ports:
+      - "3000:3000"
+    environment:
+      HOST_OS: ${OS}
+      NODE_ENV: development
+      HOST: "0.0.0.0"
+      REACT_APP: http://localhost:3000
+  pgadmin:
+    image: dpage/pgadmin4
+    volumes:
+      - /pgadmin/var/lib/pgadmin4
+    ports:
+      - "8060:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "rbbitphoto@gmail.com"
+      PGADMIN_DEFAULT_PASSWORD: "password"
