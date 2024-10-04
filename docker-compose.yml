@@ -16,12 +16,12 @@ services:
       - 15432:5432
   gotcha:
     build:
-      context: ./gotcha
+      context: ./gotcha-backend
       dockerfile: ./Dockerfile.dev
     ports:
       - "8080:8000"
     volumes:
-      - ./gotcha:/app
+      - ./gotcha-backend:/app
     depends_on:
       - postgres
     environment:
