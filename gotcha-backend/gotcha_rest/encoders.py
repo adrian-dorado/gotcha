@@ -3,4 +3,4 @@ from .models import *
 
 class CardEncoder(ModelEncoder):
     model = Card
-    properties = ["name", "card_task", "difficulty"]
+    properties = ["name", "card_task", "difficulty", "id"]

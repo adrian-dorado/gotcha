@@ -40,6 +40,7 @@ services:
       HOST_OS: ${OS}
       NODE_ENV: development
       HOST: "0.0.0.0"
+      REACT_APP_GOTCHA: http://localhost:8080
       REACT_APP: http://localhost:3000
   pgadmin:
     image: dpage/pgadmin4
