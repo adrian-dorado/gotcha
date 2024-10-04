@@ -8,7 +8,7 @@ services:
     image: postgres:14.2-bullseye
     volumes:
       - gotcha-data:/var/lib/postgresql/data
-      - ./db:/docker-enterypoint-initdb.d
+      - ./db:/docker-entrypoint-initdb.d
     environment:
       - POSTGRES_MULTIPLE_DATABASES=gotcha
       - POSTGRES_PASSWORD=test-databases
@@ -16,12 +16,12 @@ services:
       - 15432:5432
   gotcha:
     build:
-      context: ./gotcha-backend
+      context: ./gotcha
       dockerfile: ./Dockerfile.dev
     ports:
       - "8080:8000"
     volumes:
-      - ./gotcha-backend:/app
+      - ./gotcha:/app
     depends_on:
       - postgres
     environment:
