@@ -1,16 +1,16 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div>
-          <>
-          </>
+    <>
+      <BrowserRouter>
+        <div className="container">
+          <div className='header-box'>
+            test
+          </div>
         </div>
-      </header>
-    </div>
+      </BrowserRouter>
+    </>
   );
 }
-
-export default App;
