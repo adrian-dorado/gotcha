@@ -41,7 +41,7 @@ def deal_cards(request):
     medium_cards = list(Card.objects.filter(difficulty='medium'))
     hard_cards = list(Card.objects.filter(difficulty='hard'))
     
-    dealt_cards = random.sample(easy_cards, 3_) + random.sample(medium_cards, 2) + random.sample(hard_cards, 1)
+    dealt_cards = random.sample(easy_cards, 3) + random.sample(medium_cards, 2) + random.sample(hard_cards, 1)
     
     cards_data = [{'name': card.name, 'task': card.task, 'difficulty': card.difficulty, 'id': card.id} for card in dealt_cards]
     
