@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Card } from './Card';
-import { Box } from '@chakra-ui/react';
 
 export default function CardComponent() {
     const [cards, setCards] = useState([]);
@@ -18,12 +17,12 @@ export default function CardComponent() {
                 .then(data => setCards(data.cards))
                 .catch(error => console.error(error));
         }
-        // fetchCards();
+        fetchCards();
     }, []);
 
     return (
         <div>
-            <Box m={2}>Gotcha!</Box>
+            <div>Gotcha!</div>
             <ul>
                 {cards.map(card => (
                     <Card
