@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Card } from './Card';
 
-export default function CardComponent() {
+export const CardComponent = () => {
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
         const fetchCards = () => {
-
             fetch(`${process.env.REACT_APP_GOTCHA}/deal-cards/`)
                 .then(response => {
                     if (!response.ok) {
@@ -16,24 +15,22 @@ export default function CardComponent() {
                 })
                 .then(data => setCards(data.cards))
                 .catch(error => console.error(error));
-        }
+        };
         fetchCards();
     }, []);
 
     return (
-        <div>
-            <div>Gotcha!</div>
-            <ul>
+        <div style={{ padding: '10px', margin: '10px', outline: 'solid black', alignContent: 'center', textAlign: 'center' }}>
+            <div>
                 {cards.map(card => (
                     <Card
                         key={card.id}
                         name={card.name}
                         card_task={card.card_task}
                         difficulty={card.difficulty}
-                    >
-                    </Card>
+                    />
                 ))}
-            </ul>
+            </div>
         </div>
     );
 };

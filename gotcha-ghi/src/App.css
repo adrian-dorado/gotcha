@@ -1,5 +1,15 @@
-.header-box {
+body, html {
+  background-color: #1B3F4C;
+  color: #F5F0B0;
+  min-height: 100%;
+  margin: 0;
+}
+
+.header-styling {
+  padding: 20px auto 20px auto;
+  margin: 5px auto 20px auto;
+  max-width: 95%;
+  border: black solid;
   display: flex;
-  outline: auto;
-  outline-color: black;
+  justify-content: center;
 }
