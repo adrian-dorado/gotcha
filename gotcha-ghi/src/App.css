@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
+
 body, html {
   background-color: #1B3F4C;
   color: #F5F0B0;
@@ -5,11 +7,94 @@ body, html {
   margin: 0;
 }
 
+.londrina-solid-thin {
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.londrina-solid-light {
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.londrina-solid-regular {
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.londrina-solid-black {
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
 .header-styling {
-  padding: 20px auto 20px auto;
-  margin: 5px auto 20px auto;
-  max-width: 95%;
-  border: black solid;
+  background-color: #348BA3;
+  /* padding: 20px auto 20px auto; */
+  margin: 0px auto 20px auto;
+  border-bottom: solid black;
+  /* max-width: 95%; */
   display: flex;
   justify-content: center;
 }
+
+.button {
+  background-color: #36C6C2; 
+  color: white;             
+  border: none;            
+  padding: 15px 32px;     
+  text-align: center;      
+  text-decoration: none;    
+  display: inline-block;    
+  font-size: 16px;         
+  margin: 4px 2px;        
+  cursor: pointer;          
+  border-radius: 4px;    
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect */
+.button:hover {
+  background-color: #348BA3;
+  transform: scale(1.05);  
+}
+
+/* Active effect */
+.button:active {
+  transform: scale(0.95);
+}
+
+.card-container {
+  transition: max-height 0.8s ease-in-out, padding 0.8s ease-in-out;
+  max-height: 200px;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.card-container.open {
+  max-height: 500px; /* Example maximum height when open (adjust accordingly) */
+  padding: 10px;     /* Padding when the card is expanded */
+}
+
+.card-content {
+  opacity: 0; /* Start with opacity 0 */
+  transition: opacity 0.8s ease-in-out; /* Fade-in effect */
+}
+
+.card-content.visible {
+  opacity: 1; /* Full opacity when visible */
+}
+
+.card-styling {
+  background-color: #348BA3;
+  border: solid #F78B1E;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+

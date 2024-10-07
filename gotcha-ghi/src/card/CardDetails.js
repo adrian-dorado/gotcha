@@ -1,10 +1,10 @@
 import React from 'react';
 
-export const CardDetails = (props) => {
-    
+export const CardDetails = ({ card_task }) => {
+
     return (
         <div>
-            test
+            <p className='londrina-solid-light' style={{ border: 'solid', borderRadius: '10px', padding: '10px', margin: '10px' }}>{card_task}</p>
         </div>
     );
 };

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Card } from './Card';
 
-export const CardComponent = () => {
+export const DealtHand = () => {
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
@@ -20,8 +20,8 @@ export const CardComponent = () => {
     }, []);
 
     return (
-        <div style={{ padding: '10px', margin: '10px', outline: 'solid black', alignContent: 'center', textAlign: 'center' }}>
-            <div>
+        <div style={{ padding: '0px', margin: '2px', alignContent: 'center', textAlign: 'center', borderRadius: '10px' }}>
+            <div style={{display: 'grid'}}>
                 {cards.map(card => (
                     <Card
                         key={card.id}
