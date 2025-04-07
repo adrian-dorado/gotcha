@@ -1,0 +1,479 @@
+[
+    {
+        "model": "gotcha_rest.card",
+        "pk": 1,
+        "fields": {
+            "name": "The Fake Snack",
+            "card_task": "Pretend to eat a snack but secretly toss it behind you when no one is looking.",
+            "difficulty": "E"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 2,
+        "fields": {
+            "name": "The Unseen Prize",
+            "card_task": "Tell someone there’s a prize hidden somewhere, but it doesn’t exist.",
+            "difficulty": "E"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 3,
+        "fields": {
+            "name": "Invisible Ink",
+            "card_task": "Write a secret message on your hand and show it to someone as if it's invisible.",
+            "difficulty": "E"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 4,
+        "fields": {
+            "name": "Lost in Translation",
+            "card_task": "Pretend to misinterpret something someone says and respond hilariously wrong.",
+            "difficulty": "E"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 5,
+        "fields": {
+            "name": "The Sneaky Switch",
+            "card_task": "Swap your drink with someone else's when they aren’t looking.",
+            "difficulty": "E"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 6,
+        "fields": {
+            "name": "Fake News",
+            "card_task": "Tell someone a ridiculous rumor about someone else at the party.",
+            "difficulty": "M"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 7,
+        "fields": {
+            "name": "Hidden Talent",
+            "card_task": "Claim you can juggle and then dramatically 'fail' at it in a funny way.",
+            "difficulty": "M"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 8,
+        "fields": {
+            "name": "Mysterious Invitation",
+            "card_task": "Hand someone an 'invitation' to a made-up event that sounds ridiculous.",
+            "difficulty": "M"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 9,
+        "fields": {
+            "name": "The Distracted Guest",
+            "card_task": "Pretend to be on a very important phone call and keep looking around confused.",
+            "difficulty": "M"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 10,
+        "fields": {
+            "name": "Fake Name Game",
+            "card_task": "Introduce yourself to someone using a completely made-up name.",
+            "difficulty": "M"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 11,
+        "fields": {
+            "name": "The Disappearing Snack",
+            "card_task": "Claim there’s a magical snack that disappears when you say its name.",
+            "difficulty": "H"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 12,
+        "fields": {
+            "name": "Mysterious Illness",
+            "card_task": "Act like you’re suffering from a strange but funny 'illness' caused by a snack.",
+            "difficulty": "H"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 13,
+        "fields": {
+            "name": "The Unseen Guest",
+            "card_task": "Pretend to have a conversation with an imaginary guest at the party.",
+            "difficulty": "H"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 14,
+        "fields": {
+            "name": "The Phantom Photographer",
+            "card_task": "Pretend to take photos of the party and act like you're working for a famous magazine.",
+            "difficulty": "H"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 15,
+        "fields": {
+            "name": "The Dramatic Exit",
+            "card_task": "Stage a fake dramatic exit, claiming you can’t stand one more minute at the party.",
+            "difficulty": "H"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 16,
+        "fields": {
+            "name": "Secret Mission",
+            "card_task": "Tell someone you’re on a secret mission to find a 'rare' item at the party.",
+            "difficulty": "E"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 17,
+        "fields": {
+            "name": "The Mysterious Object",
+            "card_task": "Hand someone an empty box and insist it contains something very valuable.",
+            "difficulty": "M"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 18,
+        "fields": {
+            "name": "The Invisible Wall",
+            "card_task": "Pretend to bump into an invisible wall and try to convince someone it's there.",
+            "difficulty": "M"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 19,
+        "fields": {
+            "name": "Whisper Challenge",
+            "card_task": "Whisper something absurd to someone, then look shocked when they react.",
+            "difficulty": "M"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 20,
+        "fields": {
+            "name": "The Fake Illness",
+            "card_task": "Act like you’re allergic to something absurd, like the color blue.",
+            "difficulty": "H"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 21,
+        "fields": {
+            "name": "The Mischievous Mascot",
+            "card_task": "Pretend to be a mascot for a made-up team and make everyone cheer for it.",
+            "difficulty": "H"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 22,
+        "fields": {
+            "name": "Random Confession",
+            "card_task": "Pretend to confess something outrageous to someone, like you’re an alien.",
+            "difficulty": "H"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 23,
+        "fields": {
+            "name": "The Celebrity Look-Alike",
+            "card_task": "Claim to be a celebrity's long-lost twin and act dramatically.",
+            "difficulty": "H"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 24,
+        "fields": {
+            "name": "The Surprising Prize",
+            "card_task": "Hand out 'prizes' that are completely useless (like a paperclip) and act serious.",
+            "difficulty": "H"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 25,
+        "fields": {
+            "name": "The Wrong Snack",
+            "card_task": "Hand someone a snack and say it’s something completely different (e.g., popcorn is 'caviar').",
+            "difficulty": "M"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 26,
+        "fields": {
+            "name": "Compliment Relay",
+            "card_task": "Compliment three different people in a row without repeating yourself.",
+            "difficulty": "E"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 27,
+        "fields": {
+            "name": "Dance Dare",
+            "card_task": "Challenge someone to a 30-second dance-off.",
+            "difficulty": "E"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 28,
+        "fields": {
+            "name": "Mystery Mingle",
+            "card_task": "Talk to someone you don't know and find out their favorite movie.",
+            "difficulty": "E"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 29,
+        "fields": {
+            "name": "Snack Stealer",
+            "card_task": "Take a snack from someone else's plate without them noticing.",
+            "difficulty": "E"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 30,
+        "fields": {
+            "name": "Silly Selfie",
+            "card_task": "Take a funny group selfie with at least three people.",
+            "difficulty": "E"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 31,
+        "fields": {
+            "name": "Theming Up",
+            "card_task": "Convince someone to wear a themed accessory you provide (e.g., a hat or scarf).",
+            "difficulty": "M"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 32,
+        "fields": {
+            "name": "The Joke Exchange",
+            "card_task": "Tell a joke and make someone laugh; if they don't, make them tell you one.",
+            "difficulty": "M"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 33,
+        "fields": {
+            "name": "Find the Favorite",
+            "card_task": "Get someone to tell you their favorite food at the party.",
+            "difficulty": "M"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 34,
+        "fields": {
+            "name": "Secret Handshake",
+            "card_task": "Create a secret handshake with someone at the party.",
+            "difficulty": "M"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 35,
+        "fields": {
+            "name": "Toast of the Night",
+            "card_task": "Make a toast to the host and get at least three people to join you.",
+            "difficulty": "M"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 36,
+        "fields": {
+            "name": "Truth or Dare Challenge",
+            "card_task": "Challenge someone to a quick game of Truth or Dare.",
+            "difficulty": "H"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 37,
+        "fields": {
+            "name": "Fashion Police",
+            "card_task": "Pick someone to be the 'best-dressed' at the party and tell them why.",
+            "difficulty": "H"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 38,
+        "fields": {
+            "name": "Impressionist",
+            "card_task": "Do an impression of someone at the party and have others guess who it is.",
+            "difficulty": "H"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 39,
+        "fields": {
+            "name": "The Whisper Challenge",
+            "card_task": "Whisper something silly to someone and make them laugh without anyone else hearing.",
+            "difficulty": "H"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 40,
+        "fields": {
+            "name": "The Last Word",
+            "card_task": "Get the last word in a conversation with someone without them noticing.",
+            "difficulty": "H"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 41,
+        "fields": {
+            "name": "Silly String Surprise",
+            "card_task": "Spray someone with silly string without them noticing beforehand.",
+            "difficulty": "H"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 42,
+        "fields": {
+            "name": "Compliment Corner",
+            "card_task": "Start a compliment circle where everyone has to say something nice about the person next to them.",
+            "difficulty": "E"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 43,
+        "fields": {
+            "name": "Blindfolded Snack Test",
+            "card_task": "Blindfold someone and have them guess three different snacks.",
+            "difficulty": "M"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 44,
+        "fields": {
+            "name": "Mystery Dance Move",
+            "card_task": "Create a new dance move and teach it to at least three people.",
+            "difficulty": "M"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 45,
+        "fields": {
+            "name": "Favorite Drink Finder",
+            "card_task": "Find someone who shares your favorite drink and take a selfie together.",
+            "difficulty": "M"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 46,
+        "fields": {
+            "name": "The Social Butterfly",
+            "card_task": "Introduce two people who don’t know each other.",
+            "difficulty": "M"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 47,
+        "fields": {
+            "name": "Song Switch",
+            "card_task": "Convince the DJ or host to play a specific song everyone loves.",
+            "difficulty": "H"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 48,
+        "fields": {
+            "name": "Surprise Talent Show",
+            "card_task": "Organize a mini talent show with at least three participants.",
+            "difficulty": "H"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 49,
+        "fields": {
+            "name": "Caption This!",
+            "card_task": "Take a photo of a funny moment and have everyone come up with a caption.",
+            "difficulty": "H"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 50,
+        "fields": {
+            "name": "Guest of Honor",
+            "card_task": "Nominate someone to be the 'guest of honor' and explain why.",
+            "difficulty": "H"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 51,
+        "fields": {
+            "name": "Guess the Snack",
+            "card_task": "Blindfold yourself and guess five snacks from the party.",
+            "difficulty": "H"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 52,
+        "fields": {
+            "name": "Themed Costume Photo",
+            "card_task": "Take a group photo in a themed pose (e.g., superhero, classic movie).",
+            "difficulty": "M"
+        }
+    },
+    {
+        "model": "gotcha_rest.card",
+        "pk": 53,
+        "fields": {
+            "name": "Confetti Surprise",
+            "card_task": "Throw confetti on someone while shouting, 'Gotcha!'",
+            "difficulty": "H"
+        }
+    }
+]
